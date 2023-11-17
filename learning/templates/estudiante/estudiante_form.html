@@ -5,10 +5,14 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{{ titulo }}</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">{{ submit }}</button>
-    </form>
+    <div class="d-flex justify-content-center">
+        <div>
+            <h1>{{ titulo }}</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-outline-primary" type="submit">{{ submit }}</button>
+            </form>
+        </div>
+    </div>
 {% endblock %}

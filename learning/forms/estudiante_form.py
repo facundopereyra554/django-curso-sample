@@ -11,7 +11,8 @@ class EstudianteForm(forms.ModelForm):
             'email': 'Correo electrónico',
         }
         widgets = {
-            'email': forms.EmailInput(attrs={'placeholder': 'Ingrese su correo'})
+            "nombre": forms.TextInput(attrs={"class":"form-control"}),
+            'email': forms.EmailInput(attrs={"class" : "form-control"})
         }
 
 
